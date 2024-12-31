@@ -1,0 +1,192 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+.header {
+    background-color: #333;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.header .logo {
+    width: 100px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+.header h2 {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.header h3 {
+    font-size: 1.2em;
+}
+
+.logout-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: #f44336;
+    color: white;
+    padding: 8px 12px; /* Padding lebih kecil */
+    border: none;
+    border-radius: 5px; /* Membulatkan sudut */
+    cursor: pointer;
+    font-size: 0.9em; /* Ukuran font sedikit lebih kecil */
+    width: auto; /* Membuat lebar tombol mengikuti teks */
+    min-width: 80px; /* Menentukan lebar minimum */
+    text-align: center; /* Menjaga teks tetap di tengah */
+}
+
+.logout-btn:hover {
+    background-color: #e53935; /* Warna latar belakang saat hover */
+}
+
+
+/* Notification Styling */
+.notification {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Form Styling */
+.form-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* User List Table Styling */
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.user-list table th, .user-list table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.user-list table th {
+    background-color: #f2f2f2;
+}
+
+button[type="submit"]:hover {
+    background-color: #d9534f;
+}
+
+button[type="button"]:hover {
+    background-color: #0275d8;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.founder-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid white;
+}
+
+.footer-text {
+    text-align: left;
+}
+
+.footer-text strong {
+    font-size: 1.2em;
+    display: block;
+}
+
+.footer-text p {
+    margin: 5px 0;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .form-container, .user-list table {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content img {
+        margin-bottom: 10px;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
+}
